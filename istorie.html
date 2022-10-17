@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a href="index.html" >Home</a>
+  <a class="active" href="istorie.html" >Istorie</a>
+  <a href="palmares.html">Palmares</a>
+<a href="stadion.html">Stadion</a>
+<a href="legende.html">Legende</a>
+<a href="jucatori.html">Jucatori</a>
+<a href="contact.html" >Contact</a>
+<a href="https://www.fcbarcelona.com/en/" >FC BARCELONA</a>
+</div>
+<!-- Descrierea programului -->
+<section>
+<BR><BR>
+  <CENTER><h2><b>FC BARCELONA</h2></b></CENTER>
+  <CENTER><p><h1><i>ISTORIE</i></h1></p></CENTER>
+<CENTER><p><h2>Fondat în 1899 de un grup de fotbaliști elvețieni, britanici și catalani conduși de Joan Gamper, clubul a devenit un simbol al culturii catalane și al naționalismului catalan, motto-ul său fiind prin urmare „Barça este mai mult decât un club” (catalană: FC Barcelona - Més que un club). Imnul oficial al Barcelonei este „Cant del Barça”, scris de Jaume Picas și Josep Maria Espinàs. Spre deosebire de multe alte cluburi, suporterii dețin și conduc Barcelona. Este al doilea cel mai bogat club de fotbal în ceea ce privește veniturile, având o cifră de afaceri anuală de 450 milioane €. FC Barcelona are o îndelungată rivalitate cu Real Madrid, meciurile disputate între cele două echipe fiind cunoscute sub numele de „El Clásico”.</h1></p></CENTER>
+</section>
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="poza1istorie.jpg" style="width:100%">
+  <img class="mySlides" src="poza2istorie.jpg" style="width:100%">
+  <img class="mySlides" src="poza3istorie.jpg" style="width:100%">
+<img class="mySlides" src="poza4istorie.jpg" style="width:100%">
+</section>
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 6000);
+}
+</script>
+<section>
+<BR><BR>
+  <CENTER><p><h1><i><b>"Echipa de vis"</i></b></h1></p></CENTER>
+<CENTER><p><h2>
+Josep Lluís Núñez a devenit președintele lui FC Barcelona în 1978, conducând clubul într-o perioadă de creștere socială și economică neprecedată.
+
+Superstarul argentinian Diego Maradona a semnat pentru un onorariu record de la Boca Juniors. Problemele din afara sportului ale președintelui clubului au dus la transferul său la SSC Napoli. Surprinzător, echipa s-a îmbunătățit și fără starul său, odată cu revoluționarea jocului său prin tacticile de pressing aduse de antrenorul englez Terry Venables.
+
+Zeci de titluri au fost câștigate mai departe, nu doar în domeniul fotbalistic, acordându-se astfel atenție și altor sporturi.
+
+Între anii 1990 și 1994, Echipa de vis a lui Johan Cruyff, jucând un sistem de Fotbal total, a câștigat patru titluri de campioană a ligii consecutive și pentru prima oară în istorie Liga Campionilor UEFA (1992). 11 trofee au fost câștigate în timpul domniei lui Cruyff ca antrenor.</h2></p></CENTER>
+</section>
+
+<style>
+    #ABC {
+      background-color: black;
+    }
+  </style>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+<section id="ABC">
+   <br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <font color="white"><CENTER><h1><a href="https://www.facebook.com/fcbarcelona"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/fcbarcelona/"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/fcbarcelona"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.youtube.com/user/fcbarcelona"><i class="fa fa-youtube"></i></a></h1></CENTER></font>
+
+  <p>
+  <font color="white"><CENTER><h3>Powered by <a href="https://global.rakuten.com/corp/about/?scid=we_bar_bar_en_none_logo_web_20170802_unpaid_sponsor-area_corp_" target="_blank">Rakuten</a></h3></CENTER></font>
+  </p>
+<font color="white"><CENTER><h1>Made by <a href="contact.html" target="_blank">Sichet Darius</a></h1><CENTER>
+ </font> </p>
+  <br></section>
+</footer>
+
+
+
+</body>
+</html>

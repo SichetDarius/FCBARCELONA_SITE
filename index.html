@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a class="active" href="index.html" >Home</a>
+  <a href="istorie.html" >Istorie</a>
+  <a href="palmares.html">Palmares</a>
+<a href="stadion.html">Stadion</a>
+<a href="legende.html">Legende</a>
+<a href="jucatori.html">Jucatori</a>
+<a href="contact.html" >Contact</a>
+<a href="https://www.fcbarcelona.com/en/" >FC BARCELONA</a>
+</div>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="poza1intro.jpg" style="width:100%">
+  <img class="mySlides" src="poza2intro.jpg" style="width:100%">
+  <img class="mySlides" src="poza3intro.jpg" style="width:100%">
+<img class="mySlides" src="poza4intro.jpg" style="width:100%">
+</section>
+
+
+
+<!-- Descrierea programului -->
+<section>
+  <CENTER><h1><b>FC BARCELONA</h1></b></CENTER>
+  <CENTER><p><i>We love football</i></p></CENTER>
+<CENTER><h2><p><i>Acest site a fost creat pentru a impartasi pasiunea pa care suporterii o au pentru clubul "Blaugrana". Clubul, cu o istorie inceputa in anul 1899, a reusit sa impresioneze lumea fotbalului prin calitatea jocului pe care l-au oferit de-a lungul timpului. Prin influenta directa a lui Johan Cruyff, multiplu castigator al Balonului de Aur, Barcelona incepe sa impartaseasca intregii lumi notiunea de 'FOTBAL TOTAL', prin care se remarca daruirea jucatorilor pe teren, pentru culorile clubului. Pasiunea pentru acest club am inceput-o la o varsta frageda, crescand astfel cu jucatori de top precum Ronaldinho,Eto'o,Puyol si Messi,legende ale acestui club. 'Extraterestrii' au reusit sa cucereasca Champions League, cea mai prestigiosa competitie europeana, de 5 ori, reusind in anul 2009, sub comanda lui Pep Guardiola, sa castige toate competitiile in care au participat(6 la numar), performanta absoluta pentru fotbalul mondial.
+FC BARCELONA este mai mult decat un club fotbalistic, fiind un adevarat simbol al culturii catalane si a nationalismului catalan, motto-ul sau fiind „Barça este mai mult decât un club.”</i></h2></p></CENTER>
+</section>
+
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+</script>
+<style>
+    #ABC {
+      background-color: black;
+    }
+  </style>
+
+<!-- Footer -->
+<footer>
+<section id="ABC">
+   <br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <font color="white"><CENTER><h1><a href="https://www.facebook.com/fcbarcelona"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/fcbarcelona/"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/fcbarcelona"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.youtube.com/user/fcbarcelona"><i class="fa fa-youtube"></i></a></h1></CENTER></font>
+
+  <p>
+  <font color="white"><CENTER><h3>Powered by <a href="https://global.rakuten.com/corp/about/?scid=we_bar_bar_en_none_logo_web_20170802_unpaid_sponsor-area_corp_" target="_blank">Rakuten</a></h3></CENTER></font>
+  </p>
+<font color="white"><CENTER><h1>Made by <a href="contact.html" target="_blank">Sichet Darius</a></h1><CENTER>
+ </font> </p>
+  <br></section>
+</footer>
+
+
+
+</body>
+</html>

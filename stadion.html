@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a href="index.html" >Home</a>
+  <a href="istorie.html" >Istorie</a>
+  <a href="palmares.html">Palmares</a>
+<a class="active" href="stadion.html">Stadion</a>
+<a href="legende.html">Legende</a>
+<a href="jucatori.html">Jucatori</a>
+<a href="contact.html" >Contact</a>
+<a href="https://www.fcbarcelona.com/en/" >FC BARCELONA</a>
+</div>
+
+
+
+<br><br><br><br>
+<!-- Descrierea programului -->
+<section>
+  <CENTER><h1><b>CAMP NOU</h1></b></CENTER>
+  <CENTER><p><i><h3>Camp Nou este un stadion de fotbal situat în Barcelona, Spania. Denumirea provine din limba catalană,<br> însemnând „teren (câmp) nou”. Cu o capacitate de 99 354 de locuri, este cel mai mare stadion de fotbal din Europa.<br> Pe acest stadion își dispută meciurile de pe teren propriu echipa FC Barcelona. Este cunoscut ca fiind unul <br>dintre cele mai mari, și cu una dintre cele mai electrizante atmosfere din lume. <br>Numele său oficial —Estadi del Futbol Club Barcelona— se traduce Stadionul FC Barcelona, deși este cunoscut<br> mai ales sub numele Camp Nou de către fanii din întreaga lume. <br>Adresa stadionului este Carrer d'Arístides Maillol 12, 08028, Barcelona, Catalunia, Spania.</h3></i></p></CENTER>
+
+</section>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <p>Apasati pe imagini pentru a le mari:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="stadion1.jpg" alt="Camp Nou" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="stadion2.jpg" alt="Camp Nou" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="stadion3.jpg" alt="Camp Nou" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="stadion4.jpg" alt="Camp Nou" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+<center><h3><p>Clubul a devenit un simbol al culturii catalane și al naționalismului catalan, mottoul său fiind prin urmare „Barça este mai mult decât un club” (catalană: FC Barcelona - Més que un club). Imnul oficial al Barcelonei este „Cant del Barça”, scris de Jaume Picas și Josep Maria Espinàs. Spre deosebire de multe alte cluburi, suporterii dețin și conduc Barcelona. Este al doilea cel mai bogat club de fotbal în ceea ce privește veniturile, având o cifră de afaceri anuală de 450 milioane €.[3] FC Barcelona are o îndelungată rivalitate cu Real Madrid, meciurile disputate între cele două echipe fiind cunoscute sub numele de „El Clásico”.</p></h3></center>
+<style>
+    #ABD {
+      background-color: blue;
+    }
+  </style>
+
+<section id="ABD">
+
+
+<center><h1>IMN FC BARCELONA</h1></CENTER>
+<center><video width="400" controls>
+  <source src="imn.mp4" type="video/mp4">
+  <source src="imn.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+</section>
+
+
+
+
+<style>
+    #ABC {
+      background-color: black;
+    }
+  </style>
+
+
+
+
+<!-- Footer -->
+<footer>
+<section id="ABC">
+   <br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <font color="white"><CENTER><h1><a href="https://www.facebook.com/fcbarcelona"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/fcbarcelona/"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/fcbarcelona"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.youtube.com/user/fcbarcelona"><i class="fa fa-youtube"></i></a></h1></CENTER></font>
+
+  <p>
+  <font color="white"><CENTER><h3>Powered by <a href="https://global.rakuten.com/corp/about/?scid=we_bar_bar_en_none_logo_web_20170802_unpaid_sponsor-area_corp_" target="_blank">Rakuten</a></h3></CENTER></font>
+  </p>
+<font color="white"><CENTER><h1>Made by <a href="contact.html" target="_blank">Sichet Darius</a></h1><CENTER>
+ </font> </p>
+  <br></section>
+</footer>
+
+
+
+</body>
+</html>
